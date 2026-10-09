@@ -19,10 +19,32 @@
 {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
-  "name": "Animation++",
+  "name": "Animation++ Technologies",
+  "alternateName": "Animation++",
   "url": "https://www.animationplusplus.in/",
+  "email": "admin@animationplusplus.in",
   "description": "Proprietary spatial AI platform transforming complex academic syllabi into interactive 3D simulations.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Sumit K",
+    "jobTitle": "Founder & Chief AI Systems Architect",
+    "sameAs": "https://www.linkedin.com/in/animationplusplus"
+  },
+  "knowsAbout": [
+    "STEM Education",
+    "Spatial AI",
+    "3D Simulation",
+    "Generative Pedagogy",
+    "Cognitive Retention"
+  ],
   "sameAs": [
+    "https://www.linkedin.com/in/animationplusplus",
     "https://www.instagram.com/animationplusplus/",
     "https://www.threads.com/@animationplusplus"
   ]
@@ -53,9 +75,11 @@
     <div class="nav-links">
       <a href="#studio">Interactive Studio</a>
       <a href="#architecture">Platform Engine</a>
+      <a href="#infrastructure">AI Tech Stack</a>
       <a href="#subjects">STEM Coverage</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#traction">Empirical Lab</a>
       <a href="#enterprise">Enterprise SaaS</a>
-      <a href="#traction">Traction</a>
       <a href="#contact" class="nav-btn">Request Pilot</a>
     </div>
   </div>
@@ -103,7 +127,7 @@
       <div class="metric-divider"></div>
       <div class="metric-card">
         <span class="metric-num">565K+</span>
-        <span class="metric-label">Learners Validating Visual Retention</span>
+        <span class="metric-label">Learners in Empirical R&D Lab</span>
       </div>
       <div class="metric-divider"></div>
       <div class="metric-card">
@@ -196,12 +220,41 @@
                 </div>
               </div>
 
-              <!-- Tab 2: Adaptive Narration -->
+              <!-- Tab 2: Adaptive Narration (With ElevenLabs Voice AI Widget) -->
               <div class="tab-panel" id="panel-script">
                 <div class="panel-header">
                   <span class="panel-title">Grade-Calibrated Spoken Narration</span>
-                  <span class="badge-tag">Audio Cadence</span>
+                  <span class="badge-tag">ElevenLabs Audio</span>
                 </div>
+
+                <!-- Voice AI Integration Waveform Widget -->
+                <div class="audio-waveform-widget">
+                  <div class="audio-widget-top">
+                    <button class="audio-play-btn" id="audioPlayBtn" aria-label="Play/Pause Narration Audio">
+                      <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                      <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                    </button>
+                    <div class="audio-track-info">
+                      <div class="audio-track-header">
+                        <span class="audio-track-title" id="audioTrackTitle">Neural Voice Cadence Simulation</span>
+                        <span class="audio-timer"><span id="audioTimerCurrent">00:00</span> / <span id="audioTimerTotal">00:30</span></span>
+                      </div>
+                      <div class="audio-wave-bars" id="audioWaveBars">
+                        <!-- Soundbars generated dynamically -->
+                        <span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span>
+                        <span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span>
+                        <span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span>
+                        <span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span>
+                        <span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="audio-elevenlabs-badge">
+                    <span class="audio-elevenlabs-dot"></span>
+                    <span>Bilingual Voice Cadence &bull; Synthesized via <strong>ElevenLabs Neural Audio</strong></span>
+                  </div>
+                </div>
+
                 <div class="script-details" id="scriptContent">
                   <!-- Injected via JavaScript -->
                 </div>
@@ -211,7 +264,7 @@
               <div class="tab-panel" id="panel-spatial">
                 <div class="panel-header">
                   <span class="panel-title">3D Engine Parameters & Geometry Pipeline</span>
-                  <span class="badge-tag">WebGL / 3D Spec</span>
+                  <span class="badge-tag">WebGL / Three.js</span>
                 </div>
                 <div class="code-box">
                   <pre><code id="spatialContent"><!-- Injected via JavaScript --></code></pre>
@@ -220,24 +273,24 @@
             </div>
           </div>
 
-          <!-- Right Column: Interactive Visual Spatial Canvas -->
+          <!-- Right Column: Interactive Visual Spatial 3D Canvas -->
           <div class="studio-viewport">
             <div class="viewport-header">
               <span class="viewport-title" id="viewportTopicTitle">Faraday-Lenz Spatial Induction Simulation</span>
-              <span class="viewport-badge">3D SIMULATION ACTIVE</span>
+              <span class="viewport-badge">INTERACTIVE 3D &bull; 60 FPS</span>
             </div>
             
             <div class="viewport-canvas-container" id="visualViewport">
-              <!-- Visual Mockup Canvas Card -->
-              <div class="spatial-card" id="spatialSceneCard">
-                <div class="spatial-orbit-ring ring-1"></div>
-                <div class="spatial-orbit-ring ring-2"></div>
-                <div class="spatial-center-model" id="spatialModelIcon">⚡</div>
-                
-                <div class="spatial-overlay-data">
-                  <div class="data-tag tag-top" id="dataTagTop">B-Field Flux: &Phi; = &int; B &bull; dA</div>
-                  <div class="data-tag tag-bottom" id="dataTagBottom">Induced EMF: &epsilon; = -d&Phi;/dt</div>
-                </div>
+              <canvas id="spatialCanvas" class="spatial-interactive-canvas"></canvas>
+              
+              <div class="canvas-drag-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 15l-3 3-3-3M9 9l3-3 3 3M15 9l3 3-3 3M9 15l-3-3 3-3"/></svg>
+                <span>Click / Touch & Drag to Orbit 3D Simulation</span>
+              </div>
+              
+              <div class="spatial-overlay-data">
+                <div class="data-tag tag-top" id="dataTagTop">B-Field Flux: &Phi; = &int; B &bull; dA</div>
+                <div class="data-tag tag-bottom" id="dataTagBottom">Induced EMF: &epsilon; = -d&Phi;/dt</div>
               </div>
             </div>
 
@@ -316,6 +369,63 @@
     </div>
   </section>
 
+  <!-- Generative Media & Model Infrastructure (For fal.ai & Microsoft Founders Hub) -->
+  <section class="section infrastructure-section" id="infrastructure">
+    <div class="container">
+      <div class="section-header">
+        <span class="subheading">FOUNDATION ARCHITECTURE</span>
+        <h2 class="section-title">Four-Tier Generative Media Infrastructure</h2>
+        <p class="section-desc">Powered by enterprise-grade foundational AI infrastructure and high-throughput diffusion compute for production-grade spatial STEM generation.</p>
+      </div>
+
+      <div class="infra-grid">
+        <div class="infra-card fade-in">
+          <div class="infra-step-tag">TIER 01</div>
+          <div class="infra-icon">🧠</div>
+          <h3>Cognitive Curriculum Decomposition</h3>
+          <div class="infra-providers">
+            <span class="provider-pill">Azure OpenAI (GPT-4o)</span>
+            <span class="provider-pill">Claude 3.5 Sonnet</span>
+          </div>
+          <p>High-context multi-turn reasoning across 200k+ token curriculum textbooks. Constructs non-linear semantic dependency trees and isolates student cognitive friction points.</p>
+        </div>
+
+        <div class="infra-card fade-in">
+          <div class="infra-step-tag">TIER 02</div>
+          <div class="infra-icon">🎙️</div>
+          <h3>Neural Acoustic Narration</h3>
+          <div class="infra-providers">
+            <span class="provider-pill highlight-eleven">ElevenLabs Multilingual Audio Engine</span>
+          </div>
+          <p>Ultra-expressive neural text-to-speech engine producing synchronized bilingual narration with precise phonetic pronunciation of rigorous STEM nomenclature.</p>
+        </div>
+
+        <div class="infra-card fade-in">
+          <div class="infra-step-tag">TIER 03</div>
+          <div class="infra-icon">⚡</div>
+          <h3>Generative Visual & Video Diffusion</h3>
+          <div class="infra-providers">
+            <span class="provider-pill highlight-fal">fal.ai Compute</span>
+            <span class="provider-pill">FLUX.1 Diffusion</span>
+            <span class="provider-pill">Kling AI</span>
+          </div>
+          <p>Serverless high-throughput cloud inference via <strong>fal.ai</strong>. Generates photoreal anatomical cutaways via FLUX.1 and dynamic continuous physical motion through Kling AI.</p>
+        </div>
+
+        <div class="infra-card fade-in">
+          <div class="infra-step-tag">TIER 04</div>
+          <div class="infra-icon">📐</div>
+          <h3>Spatial Geometry Compiler</h3>
+          <div class="infra-providers">
+            <span class="provider-pill">WebGL 2.0</span>
+            <span class="provider-pill">Three.js PBR Runtime</span>
+          </div>
+          <p>Translates diffusion keyframes and vector mathematics into interactive 3D particle meshes and client-side manipulable simulations running at locked 60 FPS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- STEM Discipline Coverage -->
   <section class="section subjects-section" id="subjects">
     <div class="container">
@@ -349,6 +459,89 @@
           <h4>Multivariable Calculus & Geometry</h4>
           <p>Transforming 3D surface integrals, divergence theorems, non-Euclidean topologies, and differential manifolds into manipulable spaces.</p>
           <span class="card-meta">95+ Modules Synthesized</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founding Leadership Section (New) -->
+  <section class="section leadership-section" id="leadership">
+    <div class="container">
+      <div class="section-header">
+        <span class="subheading">EXECUTIVE LEADERSHIP</span>
+        <h2 class="section-title">Pioneering Spatial AI Pedagogy</h2>
+        <p class="section-desc">Combining systems engineering, cognitive retention modeling, and generative spatial simulation.</p>
+      </div>
+
+      <div class="leadership-card-wrapper fade-in">
+        <div class="leadership-card">
+          <div class="founder-avatar-col">
+            <div class="founder-monogram">
+              <span>SK</span>
+              <div class="founder-badge-ring"></div>
+            </div>
+            <div class="founder-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.4 7 11.4 7.4 11.8a1 1 0 0 0 1.2 0c.4-.4 7.4-6.4 7.4-11.8a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+              Pune, Maharashtra, India
+            </div>
+          </div>
+          
+          <div class="founder-info-col">
+            <div class="founder-header">
+              <div>
+                <h3 class="founder-name">Sumit K</h3>
+                <div class="founder-title">Founder & Chief AI Systems Architect</div>
+              </div>
+              <a href="https://www.linkedin.com/in/animationplusplus" target="_blank" rel="noopener" class="linkedin-btn" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                Connect on LinkedIn
+              </a>
+            </div>
+
+            <p class="founder-bio">
+              Pioneering spatial visual pedagogy and generative 3D simulation architectures. Built Animation++ from the ground up, reaching <strong>565,000+ active learners</strong> and <strong>10M+ monthly impressions</strong> to empirically validate cognitive retention models across complex STEM domains.
+            </p>
+
+            <div class="founder-badges">
+              <span class="f-pill">Spatial Intelligence Systems</span>
+              <span class="f-pill">Generative Multimodal AI</span>
+              <span class="f-pill">Empirical Pedagogy Engineering</span>
+              <span class="f-pill">565K+ Community Architect</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Traction: Empirical Pedagogical Lab -->
+  <section class="section traction-section" id="traction">
+    <div class="container">
+      <div class="traction-banner fade-in">
+        <div class="traction-content">
+          <span class="subheading">EMPIRICAL PEDAGOGICAL RESEARCH & R&D LAB</span>
+          <h2>Validated in the Wild: The In-House Empirical Learning Lab</h2>
+          <p>Before productizing our enterprise engine, our visual cognitive models were empirically calibrated across 565,000+ active learners and 10M+ monthly impressions, measuring real-world concept retention and attention drop-off in high-friction STEM topics.</p>
+          <div class="traction-stats-row">
+            <div class="t-stat">
+              <span class="t-val">565K+</span>
+              <span class="t-lbl">Active Research Cohort</span>
+            </div>
+            <div class="t-stat">
+              <span class="t-val">10M+</span>
+              <span class="t-lbl">Monthly Benchmark Impressions</span>
+            </div>
+            <div class="t-stat">
+              <span class="t-val">4.2x</span>
+              <span class="t-lbl">Measured Concept Retention</span>
+            </div>
+          </div>
+        </div>
+        <div class="traction-badge-card">
+          <div class="badge-icon">🔬</div>
+          <h4>Zero Paid Marketing</h4>
+          <p>100% organic demand driven purely by student and educator enthusiasm for mechanism-rich 3D visual learning.</p>
+          <a href="https://www.instagram.com/animationplusplus/" target="_blank" rel="noopener" class="t-link">Inspect Public Empirical Channel &rarr;</a>
         </div>
       </div>
     </div>
@@ -400,39 +593,6 @@
     </div>
   </section>
 
-  <!-- Traction & Proof-of-Retention -->
-  <section class="section traction-section" id="traction">
-    <div class="container">
-      <div class="traction-banner fade-in">
-        <div class="traction-content">
-          <span class="subheading">GROUND-TRUTH TRACTION</span>
-          <h2>Validated by 565,000+ Active Learners</h2>
-          <p>We didn't develop this in a vacuum. Our core visual pedagogy was stress-tested in the wild through our flagship learning community, reaching over 10,000,000 monthly visual impressions with zero marketing spend.</p>
-          <div class="traction-stats-row">
-            <div class="t-stat">
-              <span class="t-val">565K+</span>
-              <span class="t-lbl">Organic Community</span>
-            </div>
-            <div class="t-stat">
-              <span class="t-val">10M+</span>
-              <span class="t-lbl">Monthly Engagements</span>
-            </div>
-            <div class="t-stat">
-              <span class="t-val">92%</span>
-              <span class="t-lbl">Reported Comprehension Boost</span>
-            </div>
-          </div>
-        </div>
-        <div class="traction-badge-card">
-          <div class="badge-icon">🌟</div>
-          <h4>Zero Paid Acquisition</h4>
-          <p>100% organic demand driven purely by student and educator enthusiasm for mechanism-rich 3D visual learning.</p>
-          <a href="https://www.instagram.com/animationplusplus/" target="_blank" rel="noopener" class="t-link">View Community Channel &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Enterprise Contact / Pilot Section -->
   <section class="cta-section" id="contact">
     <div class="cta-container fade-in">
@@ -441,7 +601,7 @@
       <p>We are currently onboarding select EdTech platforms, premier school networks, and institutional curriculum partners for our 2026 pilot program.</p>
       
       <div class="cta-actions">
-        <a class="btn btn-primary btn-large" href="mailto:admin@animationplusplus.in?subject=Animation%2B%2B%20Enterprise%20Pilot%20Inquiry&body=Hi%20Animation%2B%2B%20Team%2C%0A%0AWe%20are%20interested%20in%20deploying%20your%203D%20Spatial%20STEM%20Learning%20Engine%20for%20our%20institution%2Fedtech%20platform.%0A%0AOrganization%3A%0ATarget%20Curriculum%2FGrade%3A%0APrimary%20Interest%20(API%20Integration%20%2F%20Institutional%20License)%3A%0A%0AThank%20you!">
+        <a class="btn btn-primary btn-large" href="mailto:admin@animationplusplus.in?subject=Animation%2B%2B%20Inquiry&body=Hi%20Animation%2B%2B%20Team%2C%0A%0AWe%20are%20interested%20in%20deploying%20your%203D%20Spatial%20STEM%20Learning%20Engine%20for%20our%20institution%2Fedtech%20platform.%0A%0AOrganization%3A%0ATarget%20Curriculum%2FGrade%3A%0APrimary%20Interest%20(API%20Integration%20%2F%20Institutional%20License)%3A%0A%0AThank%20you!">
           Request Pilot Access
           <svg class="icon" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
         </a>
@@ -464,18 +624,90 @@
       <span class="brand-name">Animation<span class="plus">++</span></span>
       <span class="brand-tag">The Generative 3D Learning Engine for STEM</span>
     </div>
+
+    <!-- Mandatory ElevenLabs Grant Partner Attribution Badge -->
+    <div class="elevenlabs-partner-badge">
+      <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="elevenlabs-link">
+        <span class="el-sparkle">✦</span>
+        Voice Intelligence Powered by <strong>ElevenLabs Grants</strong>
+      </a>
+    </div>
+
     <div class="footer-nav">
       <a href="#studio">Interactive Studio</a>
-      <a href="#architecture">Engine Pipeline</a>
-      <a href="#subjects">STEM Subjects</a>
+      <a href="#infrastructure">AI Stack</a>
+      <a href="#leadership">Leadership</a>
       <a href="#enterprise">Enterprise SaaS</a>
-      <a href="mailto:admin@animationplusplus.in">Contact</a>
+      <a href="#" id="linkPrivacy">Privacy Policy</a>
+      <a href="#" id="linkTerms">Terms of Service</a>
+      <a href="mailto:admin@animationplusplus.in?subject=Animation%2B%2B%20Inquiry">Contact</a>
     </div>
   </div>
+  
   <div class="footer-bottom">
-    <p>&copy; 2026 Animation++. Engineering the future of spatial STEM intelligence. All rights reserved.</p>
+    <p>&copy; 2026 Animation++ Technologies. Pune, Maharashtra, India. All rights reserved.</p>
   </div>
 </footer>
+
+<!-- Legal Trust Modals -->
+<!-- Privacy Policy Modal -->
+<div class="legal-modal-backdrop" id="modalPrivacy" aria-hidden="true">
+  <div class="legal-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalPrivacyTitle">
+    <div class="legal-modal-header">
+      <h3 id="modalPrivacyTitle">Privacy Policy</h3>
+      <button class="legal-modal-close" id="closePrivacyModal" aria-label="Close Privacy Policy">&times;</button>
+    </div>
+    <div class="legal-modal-body">
+      <p class="legal-meta">Last Updated: October 2026 &bull; Animation++ Technologies, Pune, Maharashtra, India</p>
+      
+      <h4>1. Commitment to Student & Institutional Privacy</h4>
+      <p>Animation++ Technologies ("Animation++", "we", "our") is dedicated to protecting the privacy of educational institutions, teachers, and students. We strictly align our data processing with the India Digital Personal Data Protection (DPDP) Act 2023, the European Union General Data Protection Regulation (GDPR), and the Family Educational Rights and Privacy Act (FERPA).</p>
+
+      <h4>2. Zero Student Data Sale Guarantee</h4>
+      <p>We do not sell, rent, monetize, or broker student personal data to third parties or advertising networks under any circumstances. Student interactions within our interactive 3D simulations are processed purely for real-time pedagogical telemetry and concept retention feedback.</p>
+
+      <h4>3. Institutional Curriculum & Syllabus Ingestion</h4>
+      <p>Curriculum materials, textbook syllabi, and lecture outlines uploaded by partner institutions for 3D module compilation are processed in isolated enterprise environments. We do not use proprietary partner curriculum data to train foundational public models without explicit contractual permission.</p>
+
+      <h4>4. Third-Party Foundation Models & Infrastructure</h4>
+      <p>Our platform leverages enterprise cloud infrastructure, including Microsoft Azure OpenAI, ElevenLabs, and fal.ai. All inference calls utilize zero-data-retention APIs and strict encryption in transit (TLS 1.3) and at rest (AES-256).</p>
+
+      <h4>5. Contact & Data Protection Officer</h4>
+      <p>For data subject requests or compliance inquiries, please contact our privacy desk at <strong>admin@animationplusplus.in</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Terms of Service Modal -->
+<div class="legal-modal-backdrop" id="modalTerms" aria-hidden="true">
+  <div class="legal-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTermsTitle">
+    <div class="legal-modal-header">
+      <h3 id="modalTermsTitle">Terms of Service</h3>
+      <button class="legal-modal-close" id="closeTermsModal" aria-label="Close Terms of Service">&times;</button>
+    </div>
+    <div class="legal-modal-body">
+      <p class="legal-meta">Last Updated: October 2026 &bull; Animation++ Technologies, Pune, Maharashtra, India</p>
+
+      <h4>1. Acceptance of Terms</h4>
+      <p>By accessing or integrating with the Animation++ 3D STEM Learning Platform, APIs, or interactive WebGL simulations, you agree to be bound by these Terms of Service. These terms govern institutional pilots, enterprise API licensing, and educator access.</p>
+
+      <h4>2. Enterprise API & SDK Licensing</h4>
+      <p>Partners integrating our generative 3D simulation engine receive a limited, revocable, non-exclusive license to embed our WebGL runtime within authorized educational applications. Rate limits and computational allocations correspond to active enterprise tiers.</p>
+
+      <h4>3. Intellectual Property Rights</h4>
+      <p>All proprietary algorithms, 3D geometry compilation pipelines, spatial simulation engines, and software architectures remain the exclusive intellectual property of Animation++ Technologies. Partner educational institutions retain full ownership over their proprietary underlying syllabi and custom teaching notes.</p>
+
+      <h4>4. Pedagogical & Scientific Integrity</h4>
+      <p>Animation++ strives for rigorous mathematical and anatomical accuracy across all generated modules. However, simulations are intended for educational conceptual understanding and must not be used as clinical diagnostic or safety-critical engineering software.</p>
+
+      <h4>5. Governing Law & Jurisdiction</h4>
+      <p>These terms shall be governed by and construed in accordance with the laws of India. Any disputes arising hereunder shall be subject to the exclusive jurisdiction of the competent courts in Pune, Maharashtra, India.</p>
+
+      <h4>6. Support & Inquiries</h4>
+      <p>For enterprise licensing agreements or support inquiries, reach out to <strong>admin@animationplusplus.in</strong>.</p>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
