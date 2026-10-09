@@ -907,8 +907,25 @@
     }
   });
 
-  // Initial Render
-  renderTopic('physics');
+  // Active Navigation Highlighting based on pathname
+  try {
+    var path = window.location.pathname;
+    var filename = path.substring(path.lastIndexOf('/') + 1) || 'index.html';
+    var navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(function (link) {
+      var href = link.getAttribute('href');
+      if (href && (href === filename || ((filename === 'index.html' || filename === '') && (href === 'index.html' || href === '#')))) {
+        link.classList.add('active');
+      }
+    });
+  } catch (err) {
+    // Silent fallback
+  }
+
+  // Initial Render if Studio is present
+  if (document.getElementById('studioStatus')) {
+    renderTopic('physics');
+  }
 
   // Fade-in animations
   var fadeEls = document.querySelectorAll('.fade-in');

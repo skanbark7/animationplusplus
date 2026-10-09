@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technology Pipeline | Animation++ 3D STEM Engine</title>
+<meta name="description" content="Technical deep-dive into the Animation++ 4-tier generative architecture: curriculum deconstruction, ElevenLabs voice synthesis, fal.ai diffusion, and real-time WebGL runtime.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Technology Pipeline | Animation++ 3D STEM Engine">
+<meta property="og:description" content="Four-tier generative architecture transforming syllabus text into interactive 3D simulations.">
+<meta property="og:url" content="https://www.animationplusplus.in/technology.html">
+
+<link rel="canonical" href="https://www.animationplusplus.in/technology.html">
+<meta name="robots" content="index, follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+<!-- Ambient Background Glows -->
+<div class="ambient-glow glow-top" aria-hidden="true"></div>
+<div class="ambient-glow glow-center" aria-hidden="true"></div>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="brand-logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+      </span>
+      <span class="logo-text">Animation<span class="plus">++</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#studio">Interactive Studio</a>
+      <a href="technology.html" class="active">Technology</a>
+      <a href="research.html">Research Lab</a>
+      <a href="about.html">About</a>
+      <a href="enterprise.html">Enterprise</a>
+      <a href="enterprise.html#pilot" class="nav-btn">Request Pilot</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Subpage Hero Header -->
+<header class="subpage-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>Technology Pipeline</span>
+    </div>
+
+    <h1 class="subpage-title">
+      The 4-Tier Generative <span class="gradient-text">3D Engine</span>
+    </h1>
+
+    <p class="subpage-desc">
+      Building a 3D scientific simulation used to take weeks of manual work in Blender. Our pipeline takes raw syllabus text, finds where students get stuck, and generates real-time WebGL models with synchronized voice narration in under two minutes.
+    </p>
+  </div>
+</header>
+
+<main>
+  <!-- Generative Media & Model Infrastructure -->
+  <section class="section infrastructure-section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="section-header">
+        <span class="subheading">FOUNDATION ARCHITECTURE</span>
+        <h2 class="section-title">Four Specialized Pipeline Tiers</h2>
+        <p class="section-desc">Each tier handles a distinct computational challenge: curriculum parsing, voice synthesis, visual diffusion, and client-side 3D rendering.</p>
+      </div>
+
+      <div class="infra-grid">
+        <div class="infra-card fade-in">
+          <div class="infra-step-tag">TIER 01</div>
+          <div class="infra-icon">🧠</div>
+          <h3>Curriculum Deconstruction</h3>
+          <div class="infra-providers">
+            <span class="provider-pill">Azure OpenAI (GPT-4o)</span>
+            <span class="provider-pill">Claude 3.5 Sonnet</span>
+          </div>
+          <p>Ingests full textbook chapters and syllabus guides (CBSE, ICSE, AP, IB). Maps the core concept hierarchy and identifies the exact step where students lose track of the mechanism.</p>
+        </div>
+
+        <div class="infra-card fade-in">
+          <div class="infra-step-tag">TIER 02</div>
+          <div class="infra-icon">🎙️</div>
+          <h3>Neural Narration Layer</h3>
+          <div class="infra-providers">
+            <span class="provider-pill highlight-eleven">ElevenLabs Multilingual Audio</span>
+          </div>
+          <p>Generates spoken narration in clear English and conversational bilingual Hinglish. Calibrated to match the visual pacing of the 3D model, with accurate pronunciation of scientific terms.</p>
+        </div>
+
+        <div class="infra-card fade-in">
+          <div class="infra-step-tag">TIER 03</div>
+          <div class="infra-icon">⚡</div>
+          <h3>Visual & Motion Diffusion</h3>
+          <div class="infra-providers">
+            <span class="provider-pill highlight-fal">fal.ai Cloud Compute</span>
+            <span class="provider-pill">FLUX.1</span>
+            <span class="provider-pill">Kling AI</span>
+          </div>
+          <p>Uses fast serverless inference via <strong>fal.ai</strong>. Generates high-detail anatomical cutaways with FLUX.1 and dynamic motion physics simulations with Kling AI for continuous visual reference.</p>
+        </div>
+
+        <div class="infra-card fade-in">
+          <div class="infra-step-tag">TIER 04</div>
+          <div class="infra-icon">📐</div>
+          <h3>Spatial Geometry Compiler</h3>
+          <div class="infra-providers">
+            <span class="provider-pill">WebGL 2.0</span>
+            <span class="provider-pill">Three.js PBR Runtime</span>
+          </div>
+          <p>Compiles mathematical formulas and spatial trajectories into interactive 3D particle meshes and vector fields that students can rotate and inspect at 60 FPS on any phone or laptop.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEM Discipline Coverage -->
+  <section class="section subjects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subheading">STEM COVERAGE</span>
+        <h2 class="section-title">Where 2D Drawings Fall Short</h2>
+        <p class="section-desc">We focus our engine on topics where static diagrams fail to give students real spatial intuition.</p>
+      </div>
+
+      <div class="subjects-grid">
+        <div class="subject-card fade-in">
+          <div class="subject-badge badge-physics">PHYSICS</div>
+          <h4>Electromagnetism & Waves</h4>
+          <p>Magnetic flux, Lenz's law opposition, wave interference, and quantum probability orbitals. When motion and 3D orientation determine the result.</p>
+          <span class="card-meta">140+ Modules Synthesized</span>
+        </div>
+        <div class="subject-card fade-in">
+          <div class="subject-badge badge-chemistry">CHEMISTRY</div>
+          <h4>Molecular Geometry & Kinetics</h4>
+          <p>VSEPR spatial molecular shapes, reaction transition states, enzyme binding pockets, and orbital hybridization.</p>
+          <span class="card-meta">110+ Modules Synthesized</span>
+        </div>
+        <div class="subject-card fade-in">
+          <div class="subject-badge badge-biology">BIOLOGY</div>
+          <h4>Cellular Nanomachines</h4>
+          <p>ATP synthase rotary engines, DNA polymerase replication forks, and vesicle release at synapses. Biological machines in actual physical motion.</p>
+          <span class="card-meta">185+ Modules Synthesized</span>
+        </div>
+        <div class="subject-card fade-in">
+          <div class="subject-badge badge-math">MATHEMATICS</div>
+          <h4>Multivariable Calculus & Fields</h4>
+          <p>3D surface integrals, curl, divergence, and saddle points. Viewing the vector field from any camera angle eliminates coordinate confusion.</p>
+          <span class="card-meta">95+ Modules Synthesized</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Benchmarks Table -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subheading">TECHNICAL SPECIFICATIONS</span>
+        <h2 class="section-title">Platform Specifications & Benchmarks</h2>
+        <p class="section-desc">Engineered for light client footprints and rapid serverless generation.</p>
+      </div>
+
+      <div class="spec-table-container fade-in">
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Specification</th>
+              <th>Implementation Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Curriculum Ingestion</strong></td>
+              <td>PDF, Markdown, LaTeX, Plain Text</td>
+              <td>Extracts concept graphs and prerequisite trees via Azure OpenAI & Claude.</td>
+            </tr>
+            <tr>
+              <td><strong>Voice Synthesis</strong></td>
+              <td>ElevenLabs Neural Audio API</td>
+              <td>High-cadence multilingual narration with STEM phonetic dictionary.</td>
+            </tr>
+            <tr>
+              <td><strong>Visual Diffusion Compute</strong></td>
+              <td>fal.ai Serverless GPU Fleet</td>
+              <td>Sub-second FLUX.1 generation for structural references and texture maps.</td>
+            </tr>
+            <tr>
+              <td><strong>Interactive Runtime</strong></td>
+              <td>WebGL 2.0 / Canvas API</td>
+              <td>Zero external plugin requirement; runs at 60 FPS on mobile Safari and Chrome.</td>
+            </tr>
+            <tr>
+              <td><strong>Delivery Format</strong></td>
+              <td>Embedded Iframe & Web Component</td>
+              <td>Lightweight bundle (< 120 KB JS footprint) embeds cleanly into any LMS.</td>
+            </tr>
+            <tr>
+              <td><strong>End-to-End Latency</strong></td>
+              <td>&lt; 90 Seconds</td>
+              <td>From raw text prompt to interactive 3D model and synthesized voice.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-section">
+    <div class="cta-container fade-in">
+      <span class="cta-badge">INTEGRATION READY</span>
+      <h2>Interested in our API or classroom integration?</h2>
+      <p>Talk to our engineering team about deploying our 3D curriculum engine for your school or platform.</p>
+      
+      <div class="cta-actions">
+        <a class="btn btn-primary btn-large" href="enterprise.html#pilot">
+          Request Technical Pilot
+        </a>
+        <a class="btn btn-outline-white" href="index.html#studio">
+          Test Live Studio Demo
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+      </span>
+      <span class="brand-name">Animation<span class="plus">++</span></span>
+      <span class="brand-tag">Interactive 3D Learning Engine for STEM</span>
+    </div>
+
+    <!-- Mandatory ElevenLabs Grant Partner Attribution Badge -->
+    <div class="elevenlabs-partner-badge">
+      <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="elevenlabs-link">
+        <span class="el-sparkle">✦</span>
+        Voice Intelligence Powered by <strong>ElevenLabs Grants</strong>
+      </a>
+    </div>
+
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="technology.html">Technology</a>
+      <a href="research.html">Research Lab</a>
+      <a href="about.html">About</a>
+      <a href="enterprise.html">Enterprise</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="mailto:admin@animationplusplus.in?subject=Animation%2B%2B%20Inquiry">Contact</a>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2026 Animation++ Technologies. Pune, Maharashtra, India. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
